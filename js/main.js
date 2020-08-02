@@ -59,7 +59,7 @@
     }
 
     function setSlowScroll() {
-        $('#header-main-menu ul li a[href^="#"], a.button, .slow-scroll').on("click", function (e) {
+        $('#header-main-menu ul li a[href^="#"], a.button, a.customURL, .slow-scroll').on("click", function (e) {
             if ($(this).attr('href') === '#')
             {
                 e.preventDefault();
