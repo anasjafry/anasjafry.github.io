@@ -336,15 +336,16 @@
 
             if (isValidEmailAddress(emailVal)) {
                 var params = {
-                    'action': 'SendMessage',
+                    'authkey': 'YWJoaWppdGhjczo5MDQzOTYwODc2',
+                    'destination': 'anasrazak@gmail.com',
                     'name': $('#name').val(),
                     'email': $('#contact-email').val(),
-                    'subject': $('#subject').val(),
-                    'message': $('#message').val()
+                    'mobile': $('#mobile').val(),
+                    'content': $('#message').val()
                 };
                 $.ajax({
                     type: "POST",
-                    url: "php/sendMail.php",
+                    url: "https://accelerateengine.app/email-engine/sendmessage.php",
                     data: params,
                     success: function (response) {
                         if (response) {
