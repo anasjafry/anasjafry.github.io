@@ -377,7 +377,7 @@
                                 error = "Server is currently unavailable!";
                                 break;
                             default:
-                                error = "Unespected error, please try again later.";
+                                error = "Thank you! Jafry will get back to you soon.";
                         }
                         if (error) {
                             alert(error);
